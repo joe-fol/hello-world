@@ -44,6 +44,4 @@ workflows:
       - two:
           requires:
             - one
-            - add_ssh_keys:
-              fingerprints:
-               - "SHA256:+b/hN4HdtJLh/El/kLqMj2mDhqjepf+PSKzT3kT8lm0"
+            
