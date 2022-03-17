@@ -29,6 +29,9 @@ jobs:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
           at: my_workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:+b/hN4HdtJLh/El/kLqMj2mDhqjepf+PSKzT3kT8lm0"
 
       - run: |
           if [[ $(cat my_workspace/echo-output) == "Trying out workspaces" ]]; then
